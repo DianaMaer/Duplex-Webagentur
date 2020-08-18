@@ -1,0 +1,465 @@
+@charset "utf-8";
+
+/*
+* CSS-Design
+* DUPLEX-Webseite
+* Online-Schule fr Gestaltung: Webdesign-Kurs
+*/
+
+/* Reset * * * * * * * * */
+*{
+        margin: 0;
+        padding: 0;
+}
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  font: 400 15px/24px'Droid Sans', Helvetica, Arial, sans-serif;
+  color: #2c3133;
+  margin-bottom: 290px;
+}
+/*Layout * * * * * * * */
+.wrapper{
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#wrapper{
+  width:960px;
+  margin: 0 auto;
+}
+
+#header{
+  background: #2c3133;
+  padding: 22px 0;
+  margin-bottom: 30px;
+}
+
+#teaser{
+  background: #3d4346;
+  padding: 70px 0 50px;
+  height:300px;
+  margin-bottom: 20px;
+  /*overflow: hidden;*/
+}
+
+#footer{
+  background: #2c3133;
+  color: #fff;
+  /*height:300px;*/
+  padding: 20px 0 50px;
+  margin-top: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200px;
+  width: 100%;
+}
+
+/*Layout * * * * * * * */
+
+/*Spalter * * * * * * * */
+.col_1, .col_1_2, .col_1_3, .col_2_3{
+	float: left;
+	margin: 20px 10px;
+	/*background: #aaaaaa;
+	height: 100px;*/
+	}
+
+.col_1{
+	width:940px;
+  /*height: 100px;*/
+}
+
+.col_1_2{
+  width:460px;
+}
+
+.col_1_3{
+  width:300px;
+  /*height: 100px;*/
+  position: relative;
+}
+
+.col_2_3{
+  width:620px;
+}
+
+.col_1_4{
+  width:200px;
+  margin: 20px 10px 0;
+  float: left;
+}
+
+.col_3_4{
+  width:720px;
+  margin: 20px 10px 0;
+  float: left;
+}
+/*Spalter * * * * * * * */
+
+
+/* Navigation */
+ul#navigation{
+  float: right;
+  margin: 20px 10px 0px 0px;
+  }
+
+ul#navigation li{
+  position: relative;
+  display: inline;
+  margin: 0 0 0 25px;
+  list-style: none;
+}
+
+ul#navigation li a{
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  padding: 15px 0 15px 15px;
+}
+
+ul#navigation li a:hover, ul#navigation li a.active, ul#subnavigation .active, #subnavigation li a:hover{
+  color: #ff621c;
+}
+
+#subnavigation{
+
+}
+
+#subnavigation li{
+  border-bottom: solid 1px #d7d8d9;
+  list-style: none;
+}
+
+#subnavigation li a{
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #2c3133;
+  padding: 10px 0;
+}
+
+#subnavigation li a:hover{
+  color: #ff621c;
+}
+/* Navigation */
+
+/* Drop-Down-Men */
+ul#navigation ul li a{
+  display: block;
+  text-transform: none;
+  font-size: 14px;
+  padding: 10px 35px 10px 15px;
+  border-bottom: 1px solid #3D4346;
+
+}
+
+ul#navigation ul{
+  display: none;
+  position: absolute;
+  background: #2C3133;
+  top: 25px;
+  left: 0;
+  margin: 0;
+}
+
+ul#navigation ul li{
+  margin: 0;
+}
+
+#navigation li:hover ul{
+  display:block;
+}
+
+/* Drop-Down-Men */
+
+/* Typografie */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Serif', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+h2{
+  font-size: 25px;
+  line-height: 34px;
+}
+
+h1{
+  color: #ff651d;
+  font-size: 46px;
+  line-height: 60px;
+  text-shadow: 1px 1px #b5b5b5;
+}
+
+h3{
+  font-size: 22px;
+  line-height: 32px;
+}
+
+h4{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h5{
+  font-size: 19px;
+  line-height: 28px;
+}
+
+h6{
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.teaser{
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+#teaser h1{
+  color: #ff651d;
+  font-size: 42px;
+  line-height: 54px;
+  margin: 20px 0;
+  text-shadow: 1px 1px #1d1d1d;
+}
+
+#teaser h2{
+  color: #fff;
+  margin-bottom: 20px;
+  font: 19px/28px 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+a{
+  color: #ff621c;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #2c3133;
+}
+
+#footer a:hover{
+  color: #fff;
+}
+
+p{
+	margin-bottom: 12px;
+}
+
+hr{
+  background: #2c3133;
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 20px 10px;
+  float:left;
+}
+
+.alignright{
+  float: right;
+  margin: 0 0 15px 15px;
+}
+
+.alignleft{
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+.home{
+  margin-bottom: 0 !important;
+}
+
+/**** Button ****/
+.button{
+  background: #ff621c;
+  padding: 4px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  text-shadow: 1px 1px #842e08;
+}
+
+.button:hover{
+  background: #fff;
+  color: #ff621c;
+  text-shadow: none;
+}
+
+.big{
+  font-size: 19px;
+}
+
+/**** Button ****/
+
+blockquote{
+  margin: 12px 0 24px 25px;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+  color: #666;
+}
+
+blockquote:before {
+  content: '„';
+  color: #ff621c;
+  font-size: 40px;
+}
+
+ul, ol{
+  margin: 0 0 12px 20px;
+}
+
+ul{
+  list-style: none;
+  list-style-image: url(../images/pfeil.png);
+}
+
+.img-teaser{
+  position:absolute;
+  top: 70px;
+  left:0;
+  background: #fff;
+  padding: 5px 15px 5px 20px ;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+#wrapper img{
+  margin-left: 10px;
+}
+/* Typografie */
+
+/* Tabele */
+table, tr, th, td, thead, tbody{
+  border-collapse: collapse;
+}
+
+table{
+  margin: 12px 0 24px;
+}
+
+thead tr{
+  background: #ff5e1c;
+  color: #fff;
+}
+
+th{
+  padding: 3px 0;
+}
+
+td{
+  border-top: 4px solid #fff;
+  padding: 3px 6px;
+  border-right: 1px solid #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e4e4e4;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f3f3;
+}
+
+/* Tabele */
+
+/***** Formular *****/
+label{
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input[type='text'],input[type='checkbox'], input[type='radio'],   textarea, select {
+  margin-bottom: 24px;
+}
+
+/* Formular */
+
+label {
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+input[type='text'],input[type='checkbox'], input[type='radio'], textarea, select {
+  margin-bottom: 24px;
+}
+
+input[type='text'], textarea, select {
+  width: 400px;
+  border: 1px solid #999;
+  padding: 5px;
+  font: 400 15px/24px 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+textarea {
+  height: 120px;
+}
+
+input:hover, textarea:hover {
+  border: 1px solid #ff5e1c;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #ff5e1c;
+  background: #eee;
+}
+
+input[type='submit'], input[type='reset']{
+  border: 0;
+  cursor: pointer;
+  margin-right: 20px;
+  background: #ff621c;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  text-shadow: 1px 1px #842e08;
+}
+
+input[type='reset']{
+  background: #849399;
+  text-shadow: 1px 1px #444;
+}
+
+input[type='submit']:hover, input[type='reset']:hover{
+  background: #fff;
+  color: #ff621c;
+  text-shadow: none;
+}
+
+/***** Formular *****/
+
+/* Mail-Button */
+#mail-btn{
+  display: block;
+  width: 40px;
+  height: 170px;
+  background: url("../images/mail-button.png") no-repeat;
+  position: fixed;    
+  top: 300px; 
+  left: 0;
+  z-index: 1;
+}
+
+#mail-btn:hover{
+  background: url("../images/mail-button.png") no-repeat -40px 0;
+}
